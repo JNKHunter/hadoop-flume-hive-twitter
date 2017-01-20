@@ -1,5 +1,4 @@
-#h2
-Install Hadoop in pseudo distributed mode:
+## Install Hadoop in pseudo distributed mode:
 https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html#Pseudo-Distributed_Operation
 
 core-site.xml
@@ -74,4 +73,14 @@ yarn-site.xml
         <value>localhost:8050</value>
     </property-->
 </configuration>
+```
+
+Bash profile (~/.profile on Ubuntu)
+
+```
+export HADOOP_HOME=/usr/local/hadoop
+PATH="$PATH:$HADOOP_HOME/bin"
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
+export HADOOP_HOME=/usr/local/hadoop
 ```
