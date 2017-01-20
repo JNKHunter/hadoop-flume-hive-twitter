@@ -34,3 +34,44 @@ hdfs-site.xml
     </property>
 </configuration>
 ```
+
+mapred-site.xml
+```xml
+<configuration>
+    <property>
+        <name>mapreduce.framework.name</name>
+        <value>yarn</value>
+    </property>
+</configuration>
+```
+
+slaves
+```
+localhost
+```
+
+yarn-site.xml
+```xml
+<configuration>
+    <property>
+        <name>yarn.nodemanager.aux-services</name>
+        <value>mapreduce_shuffle</value>
+    </property>
+    <property>
+        <name>yarn.nodemanager.aux-services.mapreduce_shuffle.class</name>
+        <value>org.apache.hadoop.mapred.ShuffleHandler</value>
+    </property>
+    <!--property>
+        <name>yarn.resourcemanager.resource-tracker.address</name>
+        <value>localhost:8025</value>
+    </property>
+    <property>
+        <name>yarn.resourcemanager.scheduler.address</name>
+        <value>localhost:8030</value>
+    </property>
+    <property>
+        <name>yarn.resourcemanager.address</name>
+        <value>localhost:8050</value>
+    </property-->
+</configuration>
+```
