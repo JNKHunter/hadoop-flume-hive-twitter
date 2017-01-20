@@ -1,4 +1,4 @@
-## Install Hadoop in pseudo distributed mode:
+## Install Hadoop in pseudo distributed mode on Ubuntu 16.0.4:
 https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html#Pseudo-Distributed_Operation
 
 core-site.xml
@@ -60,18 +60,6 @@ yarn-site.xml
         <name>yarn.nodemanager.aux-services.mapreduce_shuffle.class</name>
         <value>org.apache.hadoop.mapred.ShuffleHandler</value>
     </property>
-    <!--property>
-        <name>yarn.resourcemanager.resource-tracker.address</name>
-        <value>localhost:8025</value>
-    </property>
-    <property>
-        <name>yarn.resourcemanager.scheduler.address</name>
-        <value>localhost:8030</value>
-    </property>
-    <property>
-        <name>yarn.resourcemanager.address</name>
-        <value>localhost:8050</value>
-    </property-->
 </configuration>
 ```
 
