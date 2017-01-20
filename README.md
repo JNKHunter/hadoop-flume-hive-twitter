@@ -82,5 +82,4 @@ export HADOOP_HOME=/usr/local/hadoop
 PATH="$PATH:$HADOOP_HOME/bin"
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
-export HADOOP_HOME=/usr/local/hadoop
 ```
