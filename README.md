@@ -1,3 +1,6 @@
+## Install OpenJDK
+https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04
+
 ## Install Hadoop in pseudo distributed mode on Ubuntu 16.0.4:
 https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html#Pseudo-Distributed_Operation
 
