@@ -88,3 +88,6 @@ Add the json serde jar to the hive classpath
 
 ## Install MYSQL to use as the Hive metastore (Derby feels icky to me)
 https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-16-04
+
+## Create the Hive schema
+https://cwiki.apache.org/confluence/display/Hive/Hive+Schema+Tool
