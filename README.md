@@ -74,3 +74,14 @@ PATH="$PATH:$HADOOP_HOME/bin"
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
 ```
+
+
+
+Add the json serde jar to the hive classpath
+```
+<property>
+    <name>hive.aux.jars.path</name>
+    <value>/usr/lib/hive/lib/json-serde-1.3.8-SNAPSHOT-jar-with-dependencies.jar</value>
+    <description>The location of the plugin jars that contain implementations of user defined functions and serdes.</description>
+</property>
+```
