@@ -85,3 +85,6 @@ Add the json serde jar to the hive classpath
     <description>The location of the plugin jars that contain implementations of user defined functions and serdes.</description>
 </property>
 ```
+
+## Install MYSQL to use as the Hive metastore (Derby feels icky to me)
+https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-16-04
