@@ -15,8 +15,21 @@ core-site.xml
         <name>hadoop.tmp.dir</name>
         <value>/usr/local/hadoop/tmp</value>
     </property>
+
+    <property>
+        <name>hadoop.proxyuser.YOUR_USER_NAME.groups</name>
+        <value>*</value>
+    </property>
+
+    <property>
+        <name>hadoop.proxyuser.YOUR_USER_NAME.hosts</name>
+        <value>*</value>
+    </property>
+	
 </configuration>
 ```
+The hadoop.proxyuser properties allows jdbc to connect as the current user 
+
 
 hdfs-site.xml
 ```xml
